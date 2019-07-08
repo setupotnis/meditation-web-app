@@ -13,10 +13,17 @@
     </head>
     <body>
         <div class='app'>
+
+            <div class="vid-container">
+                <video Loop>
+                    <source src='./video/rain.mp4' type='video/mp4'/>
+                </video>
+            </div>
+
             <div class='time-select'>
-                <button class='time-select-btn' data-time='300'>5 minutes</button>
-                <button class='time-select-btn' data-time='600'>10 minutes</button>
-                <button class='time-select-btn' data-time='1200'>20 minutes</button>
+                <button data-time='300'>5 minutes</button>
+                <button data-time='600'>10 minutes</button>
+                <button data-time='1200'>20 minutes</button>
             </div>
             <div class='player-container'>
                 <audio class='song'>
@@ -33,7 +40,12 @@
                     
             </div>
             <div class='sound-picker'>
-                <button data-sound='./sounds/rain.mp3'><img src='./svg/rain.svg'/></button>
+                <button data-sound='./sounds/rain.mp3' data-video='./video/rain.mp4'>
+                    <img src='./svg/rain.svg' alt='rain'/>
+                </button>
+                <button data-sound='./sounds/beach.mp3' data-video='./video/beach.mp4'>
+                    <img src='./svg/beach.svg' alt='beach'/>
+                </button>
             </div>
         </div>
         
